@@ -20,13 +20,12 @@ SHOW_VIS = True
 FAN_ANGLE = np.pi/5.0
 TARGET_DISTANCE = 1.0
 MEDIAN_FILTER_SIZE = 141
-KP = 0.5  # distance term
-KD = 0.35  # angle term
-# KD = 0.5  # angle term
+KP = 1  # distance term
+KD = 1  # angle term
 PUBLISH_LINE = True
 HISTORY_SIZE = 5  # Size of the circular array for smoothing steering commands
 PUBLISH_RATE = 20.0  # number of control commands to publish per second
-SPEED = 0.2
+SPEED = 1
 
 EPSILON = 0.000001
 
