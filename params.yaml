@@ -2,4 +2,4 @@ scan_topic: "/scan"
 drive_topic: "/drive"
 side: 1
 velocity: 0.2
-desired_distance: 1.
+desired_distance: 3.
