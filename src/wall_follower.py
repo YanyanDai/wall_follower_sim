@@ -16,16 +16,16 @@ from geometry_msgs.msg import Polygon, Point32, PolygonStamped
 RIGHT = 'right'
 LEFT = 'left'
 
-SHOW_VIS = True
+SHOW_VIS = False
 FAN_ANGLE = np.pi/5.0
 TARGET_DISTANCE = 1.0
 MEDIAN_FILTER_SIZE = 141
-KP = 1  # distance term
-KD = 1  # angle term
+KP = 0.5  # distance term
+KD = 0.2  # angle term
 PUBLISH_LINE = True
 HISTORY_SIZE = 5  # Size of the circular array for smoothing steering commands
 PUBLISH_RATE = 20.0  # number of control commands to publish per second
-SPEED = 1
+SPEED = 0.4
 
 EPSILON = 0.000001
 
