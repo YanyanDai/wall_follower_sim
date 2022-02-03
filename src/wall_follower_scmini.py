@@ -193,7 +193,7 @@ class WallFollower:
                 # print smoothed_steering, self.control[0]
                 move_cmd = Twist()
                 move_cmd.linear.x = self.control[1]
-                move_cmd.angular.z = smoothed_steering
+                move_cmd.angular.z = self.control[0]
                 self.pub.publish(move_cmd)
 
                 rospy.sleep(1.0/PUBLISH_RATE)
